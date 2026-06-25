@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 app.use(cors({
     credentials: true,
-    origin: "https://instaclone-mrnn.onrender.com",
+    origin: ["http://localhost:5173", "https://instaclone-mrnn.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));
 
